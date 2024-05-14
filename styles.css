@@ -31,12 +31,6 @@ button {
     color: #616B75;
 }
 
-.timer {
-    font: size 20px;
-    text-align: center;
-
-}
-
 .quiz-info,
 #start-button {
     display: inline-block;
