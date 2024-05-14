@@ -57,3 +57,35 @@ function showQuestion() {
         `).join('')}
     `;
 }
+//choose select options
+function selectOption(button){
+    button.classList.add('selected');
+    checkAnswer
+}
+
+//handle correct and incorrect answers
+function checkAnswer() {
+    const selectedOption = Array.from(document.querySelectorAll('.option-button.selected')).find(button => button.classList.contains('selected'));
+    if (selectedOption && selectedOption.dataset.answer === 'correct') {
+        console.log("Correct!");
+    } else {
+        console.log("Incorrect.")
+
+    }
+}
+nextQuestion();
+
+//handle click on next question and timer
+function nextQuestion() {
+    currentQuestionIndex++;
+    if (currentQuestionIndex >= questions.length) {
+        // End of quiz
+        nextQuestionButton.disabled = true;
+        clearInterval(timerInterval);
+        alert("Quiz Completed!");
+    } else {
+        showQuestion();
+    }
+}
+
+    
