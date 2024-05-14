@@ -3,15 +3,20 @@ body {
     color: black;
 }
 
+.d-none {
+    display: none;
+
+}
+
 button {
-    background-color:#ffe38d;
+    background-color: #ffe38d;
     color: black;
     border: none;
     padding: 10px 20px;
     cursor: pointer;
-    text-align:center;
-    text-decoration:none;
-    display:inline-block;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
     font: size 16px;
     margin: 4px 2px;
     transition-duration: 0.4s;
@@ -26,13 +31,21 @@ button {
     color: #616B75;
 }
 
-.quiz-info, #start-button {
+.quiz-info,
+#start-button {
     display: inline-block;
     margin-right: 10px;
 }
 
 /* Ensure text color is black for all text elements */
-p, h1, h2, h3, h4, h5, h6, li, a {
-    color: black!important;
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+li,
+a {
+    color: black !important;
 }
-

@@ -1,7 +1,9 @@
 // Point at HTML elements
+const questionContainer = document.getElementById('quiz-container');
 const startButton = document.getElementById('start-button');
 const nextQuestionButton = document.getElementById('next-question'); // Fixed: Added missing quote
 const timerElement = document.getElementById('timer');
+const questionBox = document.getElementById('question-box');
 let currentQuestionIndex = 0;
 let timerInterval;
 let startTime;
@@ -41,16 +43,19 @@ const questions = [
 ];
 
 function startQuiz() {
+    console.log(questionContainer)
+    questionBox.classList.remove("d-none")
+    questionContainer.classList.add("d-none")
     startButton.disabled = true;
     nextQuestionButton.disabled = false;
     showQuestion();
-    startTime = Date.now(); // Start timer
+    startTime = Date.now() + 45 * 60 * 1000;// Start timer
     timerInterval = setInterval(updateTimer, 1000); // Timer update per second
 }
 
 function showQuestion() {
     const questionContainer = document.getElementById('question-container');
-    questionContainer.innerHTML = `
+    questionBox.innerHTML = `
         <p>${questions[currentQuestionIndex].question}</p>
         ${questions[currentQuestionIndex].options.map((option, index) => `
             <button class="option-button" data-answer="${index === questions[currentQuestionIndex].answer ? 'correct' : ''}" onclick="selectOption(this)">${option}</button>
@@ -90,8 +95,9 @@ function nextQuestion() {
 // Make timer run
 function updateTimer() {
     const elapsedTime = Date.now() - startTime;
-    let minutes = Math.floor(elapsedTime / 60000);
-    let seconds = Math.floor((elapsedTime % 60000) / 1000);
+    let totalDuration = 45 * 1000;
+    let remainingTime = totalDuration - elapsedTime;
+    let seconds = Math.floor(remainingTime / 1000);
     timerElement.textContent = `${minutes.toString().padStart(2, '0')}:${seconds.toString().padStart(2, '0')}`;
 }
 
