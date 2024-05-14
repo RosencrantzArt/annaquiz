@@ -1,12 +1,12 @@
-// Point at HTML elements
 const questionContainer = document.getElementById('quiz-container');
 const startButton = document.getElementById('start-button');
-const nextQuestionButton = document.getElementById('next-question'); // Fixed: Added missing quote
+const nextQuestionButton = document.getElementById('next-question');
 const timerElement = document.getElementById('timer');
 const questionBox = document.getElementById('question-box');
 let currentQuestionIndex = 0;
 let timerInterval;
 let startTime;
+let userResponses = []; // Array to store user responses
 
 // Array of questions and options
 const questions = [
@@ -43,40 +43,44 @@ const questions = [
 ];
 
 function startQuiz() {
-    console.log(questionContainer)
-    questionBox.classList.remove("d-none")
-    questionContainer.classList.add("d-none")
+    questionBox.classList.remove("d-none");
+    questionContainer.classList.add("d-none");
+    timerElement.classList.remove("d-none"); // Remove d-none class to show the timer
     startButton.disabled = true;
     nextQuestionButton.disabled = false;
     showQuestion();
-    startTime = Date.now() + 45 * 60 * 1000;// Start timer
+    startTime = Date.now() + (45 * 1000); // Start timer 45 seconds from now
     timerInterval = setInterval(updateTimer, 1000); // Timer update per second
 }
 
 function showQuestion() {
+    const currentQuestion = questions[currentQuestionIndex];
     const questionContainer = document.getElementById('question-container');
     questionBox.innerHTML = `
-        <p>${questions[currentQuestionIndex].question}</p>
-        ${questions[currentQuestionIndex].options.map((option, index) => `
-            <button class="option-button" data-answer="${index === questions[currentQuestionIndex].answer ? 'correct' : ''}" onclick="selectOption(this)">${option}</button>
+        <p>${currentQuestion.question}</p>
+        ${currentQuestion.options.map((option, index) => `
+            <button class="option-button" data-answer="${option === currentQuestion.answer ? 'correct' : ''}" onclick="selectOption(this)">${option}</button>
         `).join('')}
     `;
 }
 
-// Choose select options
 function selectOption(button) {
     button.classList.add('selected');
-    checkAnswer(); // Correctly call the checkAnswer function
+    userResponses.push(button.textContent); // Store the selected option text
+    checkAnswer();
 }
 
-// Handle correct and incorrect answers
 function checkAnswer() {
-    const selectedOption = Array.from(document.querySelectorAll('.option-button.selected')).find(button => button.classList.contains('selected'));
-    if (selectedOption && selectedOption.dataset.answer === 'correct') {
+    const selectedOption = document.querySelector('.option-button.selected');
+    const correctOption = currentQuestionIndex < questions.length ? questions[currentQuestionIndex].answer : null;
+    if (selectedOption && selectedOption.textContent === correctOption) {
         console.log("Correct!");
-    } else {
+        selectedOption.classList.add('correct'); // Add correct class for visual feedback
+    } else if (selectedOption) {
         console.log("Incorrect.");
+        selectedOption.classList.add('incorrect'); // Add incorrect class for visual feedback
     }
+
     nextQuestion();
 }
 
@@ -86,20 +90,46 @@ function nextQuestion() {
         // End of quiz
         nextQuestionButton.disabled = true;
         clearInterval(timerInterval);
-        alert("Quiz Completed!");
+        submitResult(); // Call submitResult when the quiz is completed
     } else {
         showQuestion();
     }
 }
 
-// Make timer run
 function updateTimer() {
-    const elapsedTime = Date.now() - startTime;
-    let totalDuration = 45 * 1000;
-    let remainingTime = totalDuration - elapsedTime;
-    let seconds = Math.floor(remainingTime / 1000);
-    timerElement.textContent = `${minutes.toString().padStart(2, '0')}:${seconds.toString().padStart(2, '0')}`;
+    const elapsedTime = Math.floor((Date.now() - startTime) / 1000); // Calculate elapsed time in seconds
+    let remainingTime = 45 - elapsedTime; // Calculate remaining time in seconds
+    if (remainingTime < 0) {
+        remainingTime = 0; // Ensure timer doesn't go negative
+    }
+
+    // Display the remaining time in MM:SS format
+    timerElement.textContent = `${remainingTime.toString().padStart(2, '0')}`;
+
+    // Check if time is up
+    if (remainingTime <= 0) {
+        clearInterval(timerInterval); // Stop the timer
+        timerElement.textContent = "Time's up!";
+        // You may want to add additional logic here for what happens when time is up
+    }
 }
 
+// Function to process the user's responses after the quiz is completed
+function submitResult() {
+    let correctAnswers = 0;
+    userResponses.forEach((response, index) => {
+        if (response === questions[index].answer) {
+            correctAnswers++;
+        }
+    });
+    const score = (correctAnswers / questions.length) * 100; // Calculate the percentage score
+    alert(`Quiz Completed!\nYour Score: ${score.toFixed(2)}%`);
+}
+
+// Make sure to clear the interval when the page is unloaded or when the quiz is over
+window.addEventListener('beforeunload', () => {
+    clearInterval(timerInterval);
+});
+
 startButton.addEventListener('click', startQuiz);
-nextQuestionButton.addEventListener('click', nextQuestion);
+nextQuestionButton.addEventListener('click', checkAnswer); // Call checkAnswer on nextQuestionButton click
