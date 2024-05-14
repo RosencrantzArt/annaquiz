@@ -1,12 +1,12 @@
-//Point at html elements
-const startButton = document.getElementById('start-button');
-const nextQuestionButton =document.getElementById('next-question');
-const timerElement =document.getElementById('timer');
+// Point at HTML elements
+const startButton = document.getElementById('start-button);
+const nextQuestionButton = document.getElementById('next question);
+const timerElement = document.getElementById('timer');
 let currentQuestionIndex = 0;
 let timerInterval;
 let startTime;
 
-//Array questions and options
+// Array of questions and options
 const questions = [
     {
         question: "Which market condition is characterized by falling prices?",
@@ -41,11 +41,11 @@ const questions = [
 ];
 
 function startQuiz() {
-    startButton.disabled= true;
+    startButton.disabled = true;
     nextQuestionButton.disabled = false;
-    showQuestion()
-    startTime = Date.now(0); //Start timer
-    timerInterval =setInterval(updateTimer, 1000);//Timer update per second
+    showQuestion();
+    startTime = Date.now(); // Start timer
+    timerInterval = setInterval(updateTimer, 1000); // Timer update per second
 }
 
 function showQuestion() {
@@ -53,29 +53,28 @@ function showQuestion() {
     questionContainer.innerHTML = `
         <p>${questions[currentQuestionIndex].question}</p>
         ${questions[currentQuestionIndex].options.map((option, index) => `
-            <button class="option-button" data-answer="${index === questions[currentQuestionIndex].answer? 'correct' : ''}" onclick="selectOption(this)">${option}</button>
+            <button class="option-button" data-answer="${index === questions[currentQuestionIndex].answer ? 'correct' : ''}" onclick="selectOption(this)">${option}</button>
         `).join('')}
     `;
 }
-//choose select options
-function selectOption(button){
+
+// Choose select options
+function selectOption(button) {
     button.classList.add('selected');
-    checkAnswer
+    checkAnswer(); // Correctly call the checkAnswer function
 }
 
-//handle correct and incorrect answers
+// Handle correct and incorrect answers
 function checkAnswer() {
     const selectedOption = Array.from(document.querySelectorAll('.option-button.selected')).find(button => button.classList.contains('selected'));
     if (selectedOption && selectedOption.dataset.answer === 'correct') {
         console.log("Correct!");
     } else {
-        console.log("Incorrect.")
-
+        console.log("Incorrect.");
     }
+    nextQuestion();
 }
-nextQuestion();
 
-//handle click on next question and timer
 function nextQuestion() {
     currentQuestionIndex++;
     if (currentQuestionIndex >= questions.length) {
@@ -88,4 +87,13 @@ function nextQuestion() {
     }
 }
 
-    
+// Make timer run
+function updateTimer() {
+    const elapsedTime = Date.now() - startTime;
+    let minutes = Math.floor(elapsedTime / 60000);
+    let seconds = Math.floor((elapsedTime % 60000) / 1000);
+    timerElement.textContent = `${minutes.toString().padStart(2, '0')}:${seconds.toString().padStart(2, '0')}`;
+}
+
+startButton.addEventListener('click', startQuiz);
+nextQuestionButton.addEventListener('click', nextQuestion);
