@@ -3,18 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
     <title>Annas Quiz</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <div id="quiz-container">
         <h1>Annas Quiz</h1>
-        <p id="timer">00.00</p>
-        <div id="question-container">
-
+        <div class"quiz-info">
+            <p>This is a quiz about financial markets.<br>
+             Answer six questions before the time runs out, you have 45 seconds.<br>
+             Good Luck!</p>
         </div>
         <button id="start-button">Start Quiz</button>
         <button id="next-question" disabled>Next Question</button>
+        <div id="question-container">
+        <div id="timer"></div>
+        <div id="result"></div>
+        <p id="timer">00.00</p>
     </div>
 
 
