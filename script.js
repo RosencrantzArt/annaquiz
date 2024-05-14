@@ -39,3 +39,21 @@ const questions = [
         answer: "Buy more stocks"
     }
 ];
+
+function startQuiz() {
+    startButton.disabled= true;
+    nextQuestionButton.disabled = false;
+    showQuestion()
+    startTime = Date.now(0); //Start timer
+    timerInterval =setInterval(updateTimer, 1000);//Timer update per second
+}
+
+function showQuestion() {
+    const questionContainer = document.getElementById('question-container');
+    questionContainer.innerHTML = `
+        <p>${questions[currentQuestionIndex].question}</p>
+        ${questions[currentQuestionIndex].options.map((option, index) => `
+            <button class="option-button" data-answer="${index === questions[currentQuestionIndex].answer? 'correct' : ''}" onclick="selectOption(this)">${option}</button>
+        `).join('')}
+    `;
+}
