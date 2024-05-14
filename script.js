@@ -1,6 +1,6 @@
 // Point at HTML elements
-const startButton = document.getElementById('start-button);
-const nextQuestionButton = document.getElementById('next question);
+const startButton = document.getElementById('start-button');
+const nextQuestionButton = document.getElementById('next-question'); // Fixed: Added missing quote
 const timerElement = document.getElementById('timer');
 let currentQuestionIndex = 0;
 let timerInterval;
