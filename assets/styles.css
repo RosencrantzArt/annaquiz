@@ -50,6 +50,26 @@ p {
     margin-right: 10px;
 }
 
+
+#timer {
+    font-size: 20px;
+    /* Adjust the font size */
+    color: #333;
+    /* Text color */
+    text-align: center;
+    /* Center align the text */
+    margin-top: 20px;
+    /* Space above the timer */
+    padding: 10px;
+    /* Padding around the text */
+    border: 1px solid #ddd;
+    /* Border around the timer */
+    border-radius: 5px;
+    /* Rounded corners */
+    background-color: #ffe38d;
+    /* Background color */
+}
+
 /* Ensure text color is black for all text elements */
 p,
 h1,
@@ -61,4 +81,11 @@ h6,
 li,
 a {
     color: black !important;
+}
+
+/* Responsive styles */
+@media screen and (max-width: 768px) {
+    .quiz-container {
+        width: 90%;
+    }
 }
