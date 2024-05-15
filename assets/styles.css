@@ -8,6 +8,7 @@ body {
 
 }
 
+
 button {
     background-color: #ffe38d;
     color: black;
@@ -30,12 +31,12 @@ h1 {
 
 }
 
-p {
-
-    font-size: medium;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-
+.quiz-info p {
+    background-color: #6F8387;
+    font-size: 20px;
+    font-weight: bold;
 }
+
 
 .quiz-container {
     width: 80%;
