@@ -17,7 +17,7 @@ button {
     text-align: center;
     text-decoration: none;
     display: inline-block;
-    font: size 16px;
+    font-size: 16px;
     margin: 4px 2px;
     transition-duration: 0.4s;
     cursor: pointer;
@@ -52,6 +52,25 @@ p {
 
 
 #timer {
+    font-size: 20px;
+    /* Adjust the font size */
+    color: #333;
+    /* Text color */
+    text-align: center;
+    /* Center align the text */
+    margin-top: 20px;
+    /* Space above the timer */
+    padding: 10px;
+    /* Padding around the text */
+    border: 1px solid #ddd;
+    /* Border around the timer */
+    border-radius: 5px;
+    /* Rounded corners */
+    background-color: #ffe38d;
+    /* Background color */
+}
+
+#result-area {
     font-size: 20px;
     /* Adjust the font size */
     color: #333;
