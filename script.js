@@ -125,6 +125,19 @@ function submitResult() {
     const score = (correctAnswers / questions.length) * 100; // Calculate the percentage score
     alert(`Quiz Completed!\nYour Score: ${score.toFixed(2)}%`);
 }
+// Function to process the user's responses after the quiz is completed
+function submitResult() {
+    let correctAnswers = 0;
+    userResponses.forEach((response, index) => {
+        if (response === questions[index].answer) {
+            correctAnswers++;
+        }
+    });
+    const score = (correctAnswers / questions.length) * 100; // Calculate the percentage score
+    alert(`Quiz Completed!\nYour Score: ${score.toFixed(2)}%`);
+}
+
+
 
 // Make sure to clear the interval when the page is unloaded or when the quiz is over
 window.addEventListener('beforeunload', () => {
@@ -133,3 +146,5 @@ window.addEventListener('beforeunload', () => {
 
 startButton.addEventListener('click', startQuiz);
 nextQuestionButton.addEventListener('click', checkAnswer); // Call checkAnswer on nextQuestionButton click
+
+
