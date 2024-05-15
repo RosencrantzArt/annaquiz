@@ -3,6 +3,7 @@ const startButton = document.getElementById('start-button');
 const nextQuestionButton = document.getElementById('next-question');
 const timerElement = document.getElementById('timer');
 const questionBox = document.getElementById('question-box');
+const restartButton = document.getElementById('restart-button');
 let currentQuestionIndex = 0;
 let timerInterval;
 let startTime;
@@ -131,6 +132,15 @@ function submitResult() {
     resultArea.innerHTML = `Quiz Completed!<br>Your Score: ${score.toFixed(2)}%`;
 }
 
+function restartQuiz() {
+    currentQuestionIndex = 0;
+    userResponses =[];
+    startQuiz();
+
+    const resultArea = document.getElementById('result-area');
+    resultArea.innerHTML = '';
+}
+
 
 // Make sure to clear the interval when the page is unloaded or when the quiz is over
 window.addEventListener('beforeunload', () => {
@@ -139,5 +149,5 @@ window.addEventListener('beforeunload', () => {
 
 startButton.addEventListener('click', startQuiz);
 nextQuestionButton.addEventListener('click', checkAnswer); // Call checkAnswer on nextQuestionButton click
-
+restartButton.addEventListener('click', restartQuiz);
 
