@@ -72,7 +72,7 @@ function selectOption(button) {
 
 function checkAnswer() {
     const selectedOption = document.querySelector('.option-button.selected');
-    const correctOption = currentQuestionIndex < questions.length ? questions[currentQuestionIndex].answer : null;
+    const correctOption = currentQuestionIndex < questions.length? questions[currentQuestionIndex].answer : null;
     if (selectedOption && selectedOption.textContent === correctOption) {
         console.log("Correct!");
         selectedOption.classList.add('correct'); // Add correct class for visual feedback
@@ -83,6 +83,7 @@ function checkAnswer() {
 
     nextQuestion();
 }
+
 
 function nextQuestion() {
     currentQuestionIndex++;
@@ -124,19 +125,11 @@ function submitResult() {
     });
     const score = (correctAnswers / questions.length) * 100; // Calculate the percentage score
     alert(`Quiz Completed!\nYour Score: ${score.toFixed(2)}%`);
-}
-// Function to process the user's responses after the quiz is completed
-function submitResult() {
-    let correctAnswers = 0;
-    userResponses.forEach((response, index) => {
-        if (response === questions[index].answer) {
-            correctAnswers++;
-        }
-    });
-    const score = (correctAnswers / questions.length) * 100; // Calculate the percentage score
-    alert(`Quiz Completed!\nYour Score: ${score.toFixed(2)}%`);
-}
 
+    //show result on page
+    const resultArea = document.getElementById('result-area');
+    resultArea.innerHTML = `Quiz Completed!<br>Your Score: ${score.toFixed(2)}%`;
+}
 
 
 // Make sure to clear the interval when the page is unloaded or when the quiz is over
