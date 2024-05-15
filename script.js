@@ -125,7 +125,6 @@ function submitResult() {
         }
     });
     const score = (correctAnswers / questions.length) * 100; // Calculate the percentage score
-    alert(`Quiz Completed!\nYour Score: ${score.toFixed(2)}%`);
 
     //show result on page
     const resultArea = document.getElementById('result-area');
