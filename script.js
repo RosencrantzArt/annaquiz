@@ -72,7 +72,6 @@ function startQuiz() {
 
 function showQuestion() {
     const currentQuestion = questions[currentQuestionIndex];
-    const questionContainer = document.getElementById('question-container');
     questionBox.innerHTML = `
         <p>${currentQuestion.question}</p>
         ${currentQuestion.options.map((option, index) => `
@@ -82,7 +81,6 @@ function showQuestion() {
 }
 
 function selectOption(button) {
-    button.classList.add('selected');
     userResponses.push(button.textContent); // Store the selected option text
     checkAnswer();
 }
