@@ -40,7 +40,23 @@ const questions = [
         question: "In a bull market, investors tend to...",
         options: ["Sell off stocks", "Buy more stocks", "Hold onto stocks", "Invest in bonds"],
         answer: "Buy more stocks"
+    },
+    {
+        question: "Over the long term, a bear market occurs every ________ year on average.",
+        options: ["1 to 2", "4 to 6", "7", "8"],
+        answer: "4 to 6"
+    },
+    {
+        question: "What's the worst thing to do in a bear market",
+        options: ["Buy", "Sell", "Nothing", "It depends"],
+        answer: "It depends"
+    },
+    {
+        question: "What's the best thing to do in a bear market",
+        options: ["Buy", "Sell", "Nothing", "It depends"],
+        answer: "It depends"
     }
+
 ];
 
 function startQuiz() {
