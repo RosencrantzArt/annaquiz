@@ -34,15 +34,13 @@ Enjoy the challenge and best of luck in your journey to understanding the intric
 
 
 ## Testing 
-W3C CSS validation 
-W3 Html validation (2 warnings Section lacks heading. Consider using h2-h6 elements to add identifying headings to all sections, or else use a dic element instead for any cases where no heading is needed. 
-Line 19 column 9 to line 19 column 37 
-Line 37 column 9 to line 37 column 50 
-None of above warnings have impact on functionaliti of the code. 
+-W3C CSS validation 
+-W3 Html validation
+-Jshint 
 
 
 
-##Project Improvements
+## Project Improvements
 
 -Overview
 
