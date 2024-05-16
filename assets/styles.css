@@ -1,6 +1,7 @@
 body {
     background-color: #6f9b8b;
     color: black;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 .d-none {
@@ -19,20 +20,17 @@ button {
     text-decoration: none;
     display: inline-block;
     font-size: 16px;
-    margin: 4px 2px;
     transition-duration: 0.4s;
-    cursor: pointer;
 }
 
 h1 {
 
     font-size: xx-large;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     text-align: center;
 }
 
 .quiz-info p {
-    background-color:#ffe38d;
+    background-color: #ffe38d;
     font-size: 15px;
 }
 
@@ -46,30 +44,12 @@ h1 {
 
 .quiz-info,
 #start-button {
-    display: inline-block;
     margin-right: 10px;
+
 }
 
 
-#timer {
-    font-size: 20px;
-    /* Adjust the font size */
-    color: #333;
-    /* Text color */
-    text-align: center;
-    /* Center align the text */
-    margin-top: 20px;
-    /* Space above the timer */
-    padding: 10px;
-    /* Padding around the text */
-    border: 1px solid #ddd;
-    /* Border around the timer */
-    border-radius: 5px;
-    /* Rounded corners */
-    background-color: #ffe38d;
-    /* Background color */
-}
-
+#timer,
 #result-area {
     font-size: 20px;
     /* Adjust the font size */
@@ -89,6 +69,7 @@ h1 {
     /* Background color */
 }
 
+
 /* Ensure text color is black for all text elements */
 p,
 h1,
@@ -99,7 +80,7 @@ h5,
 h6,
 li,
 a {
-    color: black !important;
+    color: black;
 }
 
 /* Responsive styles */
