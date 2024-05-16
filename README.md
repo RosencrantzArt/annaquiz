@@ -7,13 +7,13 @@ Welcome to the Bull and Bear Quiz! This quiz is designed to test your understand
 - [What to Expect](#whattoexpect)
 - [Scoring](#scoring)
 - [How to Use](#howtouse)
-- [Disclaimer]#disclaimer)
-- [Wirefram]#wirefram
-- [Usergoals]#usergoals
-- [Testing]#testing
-- [Design]#design
-- [ProjectImprovements]#projectimprovements
-- [Contributing]
+- [Disclaimer](#disclaimer)
+- [Wirefram](#wirefram)
+- [Usergoals](#usergoals)
+- [Testing](#testing)
+- [Design](#design)
+- [ProjectImprovements](#projectimprovements)
+- [Contributing](#contributing)
 
 ## Purpose
 Before diving into trading securities, it's crucial to have a solid grasp of market dynamics. This quiz serves as a preliminary test to evaluate your readiness and comprehension of market trends and risks.
