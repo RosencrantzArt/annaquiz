@@ -1,0 +1,109 @@
+body {
+    background-color: #6f9b8b;
+    color: black;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.d-none {
+    display: none;
+
+}
+
+
+button {
+    background-color: #ffe38d;
+    color: black;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    transition-duration: 0.4s;
+}
+
+h1 {
+
+    font-size: xx-large;
+    text-align: center;
+}
+
+.quiz-info p {
+    background-color: #ffe38d;
+    font-size: 15px;
+}
+
+
+.quiz-container {
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    color: #616B75;
+}
+
+.quiz-info,
+#start-button {
+    margin-right: 10px;
+
+}
+
+
+#timer {
+    font-size: 20px;
+    /* Adjust the font size */
+    color: #333;
+    /* Text color */
+    text-align: center;
+    /* Center align the text */
+    margin-top: 20px;
+    /* Space above the timer */
+    padding: 10px;
+    /* Padding around the text */
+    border: 1px solid #ddd;
+    /* Border around the timer */
+    border-radius: 5px;
+    /* Rounded corners */
+    background-color: #ffe38d;
+    /* Background color */
+}
+#result-area {
+    font-size: 20px;
+    /* Adjust the font size */
+    color: #333;
+    /* Text color */
+    text-align: center;
+    /* Center align the text */
+    margin-top: 20px;
+    /* Space above the timer */
+    margin-bottom: 20px;
+    padding: 10px;
+    /* Padding around the text */
+    border: 1px solid #ddd;
+    /* Border around the timer */
+    border-radius: 5px;
+    /* Rounded corners */
+    background-color: #ffe38d;
+    /* Background color */
+}
+
+
+/* Ensure text color is black for all text elements */
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+li,
+a {
+    color: black;
+}
+
+/* Responsive styles */
+@media screen and (max-width: 768px) {
+    .quiz-container {
+        width: 90%;
+    }
+}
