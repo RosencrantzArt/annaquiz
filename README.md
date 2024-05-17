@@ -55,7 +55,6 @@ The primary goal of this Bull and Bear Market quiz is to assess your foundationa
 
 - [Coolors](https://coolors.co/) - The colour palette was generated with the help of Coolors.
 
-
 - [Git](https://git-scm.com/) - Git was used through the Gitpod terminal to commit to Git and push to GitHub.
 
 - [GitHub](https://github.com/) - All code for the site is stored on GitHub after being pushed from Git. GitHub Pages serves as host for the site.
@@ -63,7 +62,7 @@ The primary goal of this Bull and Bear Market quiz is to assess your foundationa
 - [JSHint](https://jshint.com/) - Validation of JavaScript code was done with JSHint.
 
 - [Unsplash](https://unsplash.com/) - The background image for the site was provided by Unsplash.
-![IMG](assets/images/heroimg.png)
+   ![IMG](assets/images/heroimg.png)
 
 - [W3C](https://www.w3.org/) - Validation of HTML and CSS code was done with W3C.
 
@@ -104,6 +103,40 @@ Information about the quiz and purpose and also about the risk that trading with
 
 ![Quiz Information](assets/images/quizinformation.png)
 
+## Deployment & Local Development
+
+### Deployment
+
+The site is deployed using GitHub Pages - [Bull&BearQuiz](https://github.com/RosencrantzArt/annaquiz/)
+To Deploy the site using GitHub Pages:
+
+1. Login (or signup) to Github.
+2. Go to the repository for this project, [RosencrantzArt/annaquiz](https://github.com/RosencrantzArt/annaquiz).
+3. Click the settings button.
+4. Select pages in the left hand navigation menu.
+5. From the source dropdown select main branch and press save.
+6. The site has now been deployed, please note that this process may take a few minutes before the site goes live.
+
+### Local Development
+
+#### How to Fork
+
+To fork the repository:
+
+1. Log in (or sign up) to Github.
+2. Go to the repository for this project, [RosencrantzArt/annaquiz](https://github.com/RosencrantzArt/annaquiz)
+3. Click the Fork button in the top right corner.
+
+#### How to Clone
+
+To clone the repository:
+
+1. Log in (or sign up) to GitHub.
+2. Go to the repository for this project, [RosencrantzArt/annaquiz](https://github.com/kera-cudmore/TheQuizArms)
+3. Click on the code button, select whether you would like to clone with HTTPS, SSH or GitHub CLI and copy the link shown.
+4. Open the terminal in your code editor and change the current working directory to the location you want to use for the cloned directory.
+5. Type 'git clone' into the terminal and then paste the link you copied in step 3. Press enter.
+
 ## Testing 
 
 Pearpear-code review. 
@@ -120,6 +153,15 @@ Lighthouse
 
 ## Bugs
 
+Throughout my recent project, I encountered several small bugs that required attention to ensure the smooth operation of our application. Each bug presented a unique challenge, but together, they contributed to a more refined and user-friendly experience. One of the most significant bugs involved the behavior of the answer buttons after the allotted time had expired and once the results were finalized. Initially, users were able to continue clicking on the answer buttons even after the quiz had ended, which could lead to confusion and unintended consequences.
+
+Recognizing the importance of addressing this issue, I reached out to my mentor for guidance. With their expertise and support, we worked collaboratively to devise a solution. The final bug fix involved implementing a mechanism that disabled the answer buttons once the quiz concluded, preventing further interaction and ensuring that the results accurately reflected the user's last action
+
+## Unfixed bugs 
+
+I could't make all the content on page centred to make It look good on desktop. I tried flex-box, max-width and It did'd work. When no time left and also that the target group I'm 
+aiming for this quiz, mobile first is most essential. 
+
 
 ## Project Improvements
 
@@ -128,18 +170,14 @@ Lighthouse
 -This project aims to enhance the user experience and visual appeal through various improvements. These changes include optimizing content for desktop viewing, personalizing messages based on user scores, achieving symmetry in design, and imbuing a finance-oriented aesthetic.
 
 - Proposed Improvements
-1. Desktop Optimization
+
+- Desktop Optimization
 Centred Content: Ensure all content is centrally aligned to enhance readability and aesthetics on desktop screens.
 Responsive Design: Implement responsive design principles to adapt the layout seamlessly across different screen sizes.
-2. Personalized Messages
-User Score-based Messages: Tailor messages based on the user's performance or interaction with the application. Provide encouraging feedback or helpful tips depending on their scores.
-3. Symmetrical Design
-Balance and Symmetry: Enhance visual harmony by aligning elements symmetrically. This includes text alignment, spacing, and overall layout balance.
 
-- Color Scheme: Utilize colors commonly associated with finance, such as deep blues, greens, or golds, to evoke a sense of trust and professionalism.
-  Additional Notes
-- Post Time Interaction: Even after the time limit is reached, users can still access and utilize the restart button to begin anew.
-Continuous Support: While the application may restrict certain functions after the time limit, support for answering user queries remains available indefinitely. 
+- Personalized Messages
+User Score-based Messages: Tailor messages based on the user's performance or interaction with the application. Provide encouraging feedback or helpful tips depending on their scores.
+ 
 
 ## Learnings
 Developing the Bull & Bear Quiz taught me valuable lessons about project management and coding practices. Initially, I rushed into coding without adequate planning, leading to unnecessary revisions and delays. This experience emphasized the importance of thorough project planning to avoid scope creep.
