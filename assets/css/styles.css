@@ -1,6 +1,6 @@
 body {
     background-color: #6f9b8b;
-    color: #384f65;
+    color:#1f2f3e;
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
@@ -13,7 +13,6 @@ body {
 button {
     background-color: #ffe38d;
     color: #1f2f3e;
-    border: none;
     padding: 10px 20px;
     cursor: pointer;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
