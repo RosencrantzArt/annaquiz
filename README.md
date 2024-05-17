@@ -54,8 +54,6 @@ Responsive Design: Implement responsive design principles to adapt the layout se
 User Score-based Messages: Tailor messages based on the user's performance or interaction with the application. Provide encouraging feedback or helpful tips depending on their scores.
 3. Symmetrical Design
 Balance and Symmetry: Enhance visual harmony by aligning elements symmetrically. This includes text alignment, spacing, and overall layout balance.
-4. Finance Aesthetic
-Financial Visual Elements: Integrate design elements inspired by finance, such as charts, graphs, or currency symbols, to reflect the application's financial theme.
 
 -Color Scheme: Utilize colors commonly associated with finance, such as deep blues, greens, or golds, to evoke a sense of trust and professionalism.
 Additional Notes
