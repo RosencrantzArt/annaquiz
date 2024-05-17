@@ -15,6 +15,7 @@ Welcome to the Bull and Bear Quiz! This quiz is designed to test your understand
 - [Usergoals](#usergoals)
 - [Testing](#testing)
 - [Design](#design)
+- [Quiz pages](#quizpages)
 - [ProjectImprovements](#projectimprovements)
 - [Learnings](#learnings)
 - [Contributing](#contributing)
@@ -46,23 +47,53 @@ The primary goal of this Bull and Bear Market quiz is to assess your foundationa
 
 
 ## Testing 
-1.W3C CSS validation pass
-2.W3 Html validation pass 
-3.Jshint pass
-4.Pearpear-code review 
 
-5.Lighthouse - ![Lighthouse](assets/images/lighthouse.png)
+Pearpear-code review. 
+Family and friends
+Lighthouse
+![Lighthouse](assets/images/lighthouse.png)
 
-## Design 
+- [HTML5](https://en.wikipedia.org/wiki/HTML5)
 
-Media
-Image from Unsplash
+- [CSS3](https://en.wikipedia.org/wiki/CSS)
 
-Font
-Franklin Gothic Medium
+- [JavaScript](https://www.javascript.com/)
+
+### Programs & Libraries
+
+- [Balsamiq](https://balsamiq.com/) - The wireframes used for the site was created with Balsamiq.
+
+- [Chrome DevTools](https://developer.chrome.com/docs/devtools/) - A powerful tool used throughout the creation of the website.
+
+- [Coolors](https://coolors.co/) - The colour palette was generated with the help of Coolors.
+
+
+- [Git](https://git-scm.com/) - Git was used through the Gitpod terminal to commit to Git and push to GitHub.
+
+- [GitHub](https://github.com/) - All code for the site is stored on GitHub after being pushed from Git. GitHub Pages serves as host for the site.
+
+- [JSHint](https://jshint.com/) - Validation of JavaScript code was done with JSHint.
+
+- [Unsplash](https://unsplash.com/) - The background image for the site was provided by Unsplash.
+![IMG](assets/images/heroimg.png)
+
+- [W3C](https://www.w3.org/) - Validation of HTML and CSS code was done with W3C.
+
+
+## Design
+
+Font -Franklin Gothic Medium
 
 ![Colors](assets/images/colorpallet.png)
 
+
+## Quiz pages
+
+This is the first page that the user meets to understand the meaning
+![Quiz Start](assets/images/quizrestartview.png)
+
+Information about the quiz and purpose and also about the risk that trading with certificats are
+![Quiz Information](assets/images/quizinformation.png)
 
 
 
