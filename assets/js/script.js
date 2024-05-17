@@ -104,6 +104,10 @@ function nextQuestion() {
     currentQuestionIndex++;
     if (currentQuestionIndex >= questions.length) {
         // End of quiz
+        const answerBtns = document.getElementsByClassName('option-button')
+        for (let btn of answerBtns) {
+            btn.disabled = true 
+        }
         nextQuestionButton.disabled = true;
         clearInterval(timerInterval);
         submitResult(); // Call submitResult when the quiz is completed

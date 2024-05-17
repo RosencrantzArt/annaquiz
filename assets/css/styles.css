@@ -1,7 +1,7 @@
 body {
     background-color: #6f9b8b;
-    color:#1f2f3e;
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: #1f2f3e;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 .d-none {
@@ -9,7 +9,7 @@ body {
 
 }
 
-
+/* styling all buttons */
 button {
     background-color: #ffe38d;
     color: #1f2f3e;
@@ -23,6 +23,7 @@ button {
     transition-duration: 0.4s;
 }
 
+/* styling for h1 area */
 h1 {
 
     font-size: xx-large;
@@ -49,43 +50,29 @@ h1 {
 
 
 #timer {
+    /* styling for timer area */
     font-size: 20px;
-    /* Adjust the font size */
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;;
     color:#1f2f3e;
-    /* Text color */
     text-align: center;
-    /* Center align the text */
     margin-top: 20px;
-    /* Space above the timer */
     padding: 10px;
-    /* Padding around the text */
     border: 1px solid #ddd;
-    /* Border around the timer */
     border-radius: 5px;
-    /* Rounded corners */
     background-color: #ffe38d;
-    /* Background color */
 }
 #result-area {
+    /* styling for result area */
     font-size: 20px;
-    /* Adjust the font size */
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;;
     color:#1f2f3e;
-    /* Text color */
     text-align: center;
-    /* Center align the text */
     margin-top: 20px;
-    /* Space above the timer */
     margin-bottom: 20px;
     padding: 10px;
-    /* Padding around the text */
     border: 1px solid #ddd;
-    /* Border around the timer */
     border-radius: 5px;
-    /* Rounded corners */
     background-color: #ffe38d;
-    /* Background color */
 }
 
 

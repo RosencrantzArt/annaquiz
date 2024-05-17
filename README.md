@@ -14,6 +14,7 @@ Welcome to the Bull and Bear Quiz! This quiz is designed to test your understand
 - [Wirefram](#wirefram)
 - [Usergoals](#usergoals)
 - [Testing](#testing)
+- [Bugs](#bugs)
 - [Design](#design)
 - [Quiz pages](#quizpages)
 - [ProjectImprovements](#projectimprovements)
@@ -46,19 +47,6 @@ Enjoy the challenge and best of luck in your journey to understanding the intric
 The primary goal of this Bull and Bear Market quiz is to assess your foundational understanding of market conditions, helping you determine if you're ready to start investing. By answering questions about typical investor behaviors and market characteristics, you'll gain insights into how to react during different market phases. This quiz only tests your basic and schould not be consider a qualified test. 
 
 
-## Testing 
-
-Pearpear-code review. 
-Family and friends
-Lighthouse
-![Lighthouse](assets/images/lighthouse.png)
-
-- [HTML5](https://en.wikipedia.org/wiki/HTML5)
-
-- [CSS3](https://en.wikipedia.org/wiki/CSS)
-
-- [JavaScript](https://www.javascript.com/)
-
 ### Programs & Libraries
 
 - [Balsamiq](https://balsamiq.com/) - The wireframes used for the site was created with Balsamiq.
@@ -82,7 +70,24 @@ Lighthouse
 
 ## Design
 
-Font -Franklin Gothic Medium
+- #### Colours
+  The colour scheme chosen for the website was generated with [Coolors](https://coolors.co/)   
+
+Colorful Contrast for Engaging Finance Quizzes
+
+In crafting our financial quiz, I aimed to stand out by blending playfulness with educational depth. Our color choices were strategic, reflecting our desire to engage a younger, particularly female, audience with a vibrant and welcoming vibe.
+
+I opted for #ffe38d, a warm gold, to symbolize optimism and growth, making finance feel less intimidating and more inviting. Paired with #6f9b8b, a serene green, it creates a balanced, dynamic, and harmonious palette that's both visually appealing and emotionally uplifting.
+
+Additionally, I chose #1f2f3e for the text color to ensure readability without the harshness of pure black. This subtle shade provides a comfortable reading experience, enhancing the overall accessibility and engagement of the quiz.
+
+This playful color scheme was chosen to challenge traditional, serious approaches to finance, offering a fresh, engaging alternative that makes learning about money enjoyable and accessible. It's my way of saying that finance can be exciting and fun, encouraging exploration and empowerment among our users.
+
+Through our colorful design, we aim to inspire curiosity, foster understanding, and ultimately, empower individuals to take charge of their financial future with confidence and enthusiasm.
+
+This addition highlights the thoughtful consideration behind the text color choice, emphasizing readability and comfort alongside the visual appeal and educational goals of the quiz.
+
+Font -Franklin Gothic Medium 
 
 ![Colors](assets/images/colorpallet.png)
 
@@ -90,11 +95,30 @@ Font -Franklin Gothic Medium
 ## Quiz pages
 
 This is the first page that the user meets to understand the meaning
+
+
 ![Quiz Start](assets/images/quizrestartview.png)
 
 Information about the quiz and purpose and also about the risk that trading with certificats are
+
+
 ![Quiz Information](assets/images/quizinformation.png)
 
+## Testing 
+
+Pearpear-code review. 
+Family and friends
+Lighthouse
+![Lighthouse](assets/images/lighthouse.png)
+
+- [HTML5](assets/images/validationhtml.png)
+
+- [CSS3](https://en.wikipedia.org/wiki/CSS)
+
+- [JavaScript](https://www.javascript.com/)
+
+
+## Bugs
 
 
 ## Project Improvements
@@ -122,9 +146,7 @@ Developing the Bull & Bear Quiz taught me valuable lessons about project managem
 
 I also recognized the significance of commenting and documenting my code early in the development process. This oversight made debugging and maintenance more difficult than expected. Going forward, I'll integrate commenting as a standard part of my coding routine to improve code readability and maintainability.
 
-JavaScript posed particular challenges in understanding logic, despite using a mix of LMS resources and YouTube tutorials in my native language. This highlighted the need for a deeper understanding of JavaScript fundamentals and the importance of dedicating time to study and practice.
-
-Lastly, the project underscored the value of proactive self-learning and resource utilization. While external resources were helpful, I learned the importance of independently exploring topics and tailoring my learning path to meet my specific needs.
+JavaScript posed particular challenges in understanding logic, despite using a mix of LMS resources and YouTube tutorials in my native language. This highlighted the need for a deeper understanding of JavaScript fundamentals and that I need more time for practice. 
 
 Overall, this project has been a catalyst for improving my project management skills, coding practices, and JavaScript proficiency, equipping me better for future projects.
 
