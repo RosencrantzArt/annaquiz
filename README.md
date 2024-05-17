@@ -38,6 +38,11 @@ Enjoy the challenge and best of luck in your journey to understanding the intric
 ![Wireframe Image](assets/images/wireframe mobile.png)
 
 
+## Usergoals 
+
+The primary goal of this Bull and Bear Market quiz is to assess your foundational understanding of market conditions, helping you determine if you're ready to start investing. By answering questions about typical investor behaviors and market characteristics, you'll gain insights into how to react during different market phases. This quiz only tests your basic and schould not be consider a qualified test. 
+
+
 ## Testing 
 1.W3C CSS validation 
 2.W3 Html validation
