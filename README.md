@@ -49,6 +49,17 @@ The primary goal of this Bull and Bear Market quiz is to assess your foundationa
 3.Jshint 
 
 
+## Design 
+
+Media
+Image from Unsplash
+
+Font
+Franklin Gothic Medium
+
+![Colors](assets/images/colorpallet.png)
+
+
 
 
 ## Project Improvements
