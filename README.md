@@ -2,6 +2,8 @@
 
 Welcome to the Bull and Bear Quiz! This quiz is designed to test your understanding of the basics of the financial market, particularly focusing on bull and bear markets.
 
+[Find the live website here!](https://rosencrantzart.github.io/annaquiz/)
+
 
 - [Purpose](#purpose)
 - [What to Expect](#whattoexpect)
@@ -32,11 +34,15 @@ This quiz is intended for educational purposes only and should not be considered
 
 Enjoy the challenge and best of luck in your journey to understanding the intricacies of the financial market!
 
+## Wirefram 
+![Wireframe Image](assets/images/wireframe mobile.png)
+
 
 ## Testing 
--W3C CSS validation 
--W3 Html validation
--Jshint 
+1.W3C CSS validation 
+2.W3 Html validation
+3.Jshint 
+
 
 
 
@@ -58,7 +64,7 @@ Balance and Symmetry: Enhance visual harmony by aligning elements symmetrically.
 -Color Scheme: Utilize colors commonly associated with finance, such as deep blues, greens, or golds, to evoke a sense of trust and professionalism.
 Additional Notes
 -Post-Time Interaction: Even after the time limit is reached, users can still access and utilize the restart button to begin anew.
-Continuous Support: While the application may restrict certain functions after the time limit, support for answering user queries remains available indefinitely.
+Continuous Support: While the application may restrict certain functions after the time limit, support for answering user queries remains available indefinitely. 
 
 
 
