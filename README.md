@@ -51,7 +51,7 @@ The primary goal of this Bull and Bear Market quiz is to assess your foundationa
 3.Jshint pass
 4.Pearpear-code review 
 
-5.Lighthouse - ![Lighthouse]](assets/images/lighthouse.png)
+5.Lighthouse - ![Lighthouse](assets/images/lighthouse.png)
 
 ## Design 
 
@@ -87,6 +87,15 @@ Balance and Symmetry: Enhance visual harmony by aligning elements symmetrically.
 Continuous Support: While the application may restrict certain functions after the time limit, support for answering user queries remains available indefinitely. 
 
 ## Learnings
+Developing the Bull & Bear Quiz taught me valuable lessons about project management and coding practices. Initially, I rushed into coding without adequate planning, leading to unnecessary revisions and delays. This experience emphasized the importance of thorough project planning to avoid scope creep.
+
+I also recognized the significance of commenting and documenting my code early in the development process. This oversight made debugging and maintenance more difficult than expected. Going forward, I'll integrate commenting as a standard part of my coding routine to improve code readability and maintainability.
+
+JavaScript posed particular challenges in understanding logic, despite using a mix of LMS resources and YouTube tutorials in my native language. This highlighted the need for a deeper understanding of JavaScript fundamentals and the importance of dedicating time to study and practice.
+
+Lastly, the project underscored the value of proactive self-learning and resource utilization. While external resources were helpful, I learned the importance of independently exploring topics and tailoring my learning path to meet my specific needs.
+
+Overall, this project has been a catalyst for improving my project management skills, coding practices, and JavaScript proficiency, equipping me better for future projects.
 
 
 ## Contributing
