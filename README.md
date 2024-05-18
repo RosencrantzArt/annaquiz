@@ -1,8 +1,11 @@
-#Bull & Bear Quiz
+**Bull & Bear Quiz**
 
 Welcome to the Bull and Bear Quiz! This quiz is designed to test your understanding of the basics of the financial market, particularly focusing on bull and bear markets.
 
 [Find the live website here!](https://rosencrantzart.github.io/annaquiz/)
+
+![AmIResponsive](assets/images/amirespinsive.png)
+
 
 
 - [Purpose](#purpose)
@@ -10,16 +13,19 @@ Welcome to the Bull and Bear Quiz! This quiz is designed to test your understand
 - [Scoring](#scoring)
 - [How to Use](#howtouse)
 - [Disclaimer](#disclaimer)
-- [Wirefram](#wirefram)
-- [Wirefram](#wirefram)
+- [Wireframe](#wireframe)
 - [Usergoals](#usergoals)
-- [Testing](#testing)
-- [Bugs](#bugs)
+- [Userstories](#usstories)
 - [Design](#design)
 - [Quiz pages](#quizpages)
+- [Testing](#testing)
+- [Bugs](#bugs)
+- [Unfixedbugs](#unfixedbugs)
+- [Deployment](#deployment)
 - [ProjectImprovements](#projectimprovements)
 - [Learnings](#learnings)
-- [Contributing](#contributing)
+- [Acknowledgments](#acknowledsment)
+- [Contact](#contact)
 
 ## Purpose
 Before diving into trading securities, it's crucial to have a solid grasp of market dynamics. This quiz serves as a preliminary test to evaluate your readiness and comprehension of market trends and risks.
@@ -38,39 +44,36 @@ This quiz is intended for educational purposes only and should not be considered
 
 Enjoy the challenge and best of luck in your journey to understanding the intricacies of the financial market!
 
-## Wirefram 
+## Wireframe
 ![Wireframeimage](assets/images/wireframemobile.png)
 
 
-## Usergoals 
+## User goals 
 
-The primary goal of this Bull and Bear Market quiz is to assess your foundational understanding of market conditions, helping you determine if you're ready to start investing. By answering questions about typical investor behaviors and market characteristics, you'll gain insights into how to react during different market phases. This quiz only tests your basic and schould not be consider a qualified test. 
+The primary goal of this Bull and Bear Market quiz is to assess your foundational understanding of market conditions, helping you determine if you're ready to start investing. By answering questions about typical investor behaviors and market characteristics, you'll gain insights into how to react during different market phases. This quiz only tests your basic and schould not be consider a qualified test.
+
+## User stories 
+
+**The Curious Explorer**
+As a curious explorer of the financial world, I want to learn about what makes a market go up (bull) or down (bear), so I can impress my friends with my newfound knowledge!
 
 
-### Programs & Libraries
+**The Fun Seeker**
+As someone who loves a good challenge, I want to play a game that tests my understanding of bull and bear markets, so I can have a laugh and maybe even win a prize!
 
-- [Balsamiq](https://balsamiq.com/) - The wireframes used for the site was created with Balsamiq.
-
-- [Chrome DevTools](https://developer.chrome.com/docs/devtools/) - A powerful tool used throughout the creation of the website.
-
-- [Coolors](https://coolors.co/) - The colour palette was generated with the help of Coolors.
-
-- [Git](https://git-scm.com/) - Git was used through the Gitpod terminal to commit to Git and push to GitHub.
-
-- [GitHub](https://github.com/) - All code for the site is stored on GitHub after being pushed from Git. GitHub Pages serves as host for the site.
-
-- [JSHint](https://jshint.com/) - Validation of JavaScript code was done with JSHint.
-
-- [Unsplash](https://unsplash.com/) - The background image for the site was provided by Unsplash.
-   ![IMG](assets/images/heroimg.png)
-
-- [W3C](https://www.w3.org/) - Validation of HTML and CSS code was done with W3C.
+**The Knowledge Tester**
+As a thread user who's been hearing about these bull and bear things but isn't quite sure what they mean, I want to take a quick quiz to see how much I really know about the basics, so I can feel confident in my financial literacy!
 
 
 ## Design
 
-- #### Colours
-  The colour scheme chosen for the website was generated with [Coolors](https://coolors.co/)   
+**Colors and Image**
+
+The colour scheme chosen for the website was generated with [Coolors](https://coolors.co/)   
+
+The image is from Unsplash and have a fun and playful look that I was looking for. 
+
+   ![IMG](assets/images/heroimg.png) 
 
 Colorful Contrast for Engaging Finance Quizzes
 
@@ -86,22 +89,76 @@ Through our colorful design, we aim to inspire curiosity, foster understanding, 
 
 This addition highlights the thoughtful consideration behind the text color choice, emphasizing readability and comfort alongside the visual appeal and educational goals of the quiz.
 
-Font -Franklin Gothic Medium 
+**Font Franklin Gothic Medium** 
+Easy to read and made It in a dark greyblue instead of black to ensured sufficient contrast between text and background colors for readability.
 
 ![Colors](assets/images/colorpallet.png)
 
 
 ## Quiz pages
 
-This is the first page that the user meets to understand the meaning
+**This is the first page that the user meets were they can see all the esentials and read about the purpose.**
+
+![Quiz start](assets/images/startpage.png)
 
 
-![Quiz Start](assets/images/quizrestartview.png)
 
-Information about the quiz and purpose and also about the risk that trading with certificats are
-
+**Information about the quiz and purpose and also about the risk that trading with certificats are.**
 
 ![Quiz Information](assets/images/quizinformation.png)
+
+
+
+**Press start to make the quiz start** 
+
+![Start Quiz](assets/images/startbutton.png)
+
+
+
+**Timer starts counting down from 90 - 0 and it's easy to see.**
+
+![Timer](assets/images/timer.png)
+
+
+
+**Your scoring shows up after you answered all questions and timer stop.**
+
+![Scoring](assets/images/scoring.png)
+
+
+
+**Restart the quiz.**
+
+![Restart](assets/images/scoring.png)
+
+
+
+**After user press Restart, the quiz starts over and timer starts.**
+
+![Restart](assets/images/restartview.png)
+
+ 
+
+
+
+### Programs & Libraries
+
+- [Wireframe](https://miro.com/sv/) - Miro was used to make the wireframe
+
+- [Chrome DevTools](https://developer.chrome.com/docs/devtools/) - A powerful tool used throughout the creation of the website.
+
+- [Coolors](https://coolors.co/) - The colour palette was generated with the help of Coolors.
+
+- [Git](https://git-scm.com/) - Git was used through the Gitpod terminal to commit to Git and push to GitHub.
+
+- [GitHub](https://github.com/) - All code for the site is stored on GitHub after being pushed from Git. GitHub Pages serves as host for the site.
+
+- [JSHint](https://jshint.com/) - Validation of JavaScript code was done with JSHint.
+
+- [Unsplash](https://unsplash.com/) - The background image for the site was provided by Unsplash.
+
+- [W3C](https://www.w3.org/) - Validation of HTML and CSS code was done with W3C.
+
 
 ## Deployment & Local Development
 
@@ -139,16 +196,30 @@ To clone the repository:
 
 ## Testing 
 
-Pearpear-code review. 
-Family and friends
-Lighthouse
+**Pearpear-code review**
+
+**Family and friends tried It on different screens**
+Family and friends played a pivotal role in the initial testing phase of the Bull & Bear Quiz. Their feedback was invaluable in identifying areas for improvement and refining the user experience. We invited a diverse group of testers, ranging from tech-savvy individuals to those with limited exposure to financial markets, to ensure a broad perspective. Their insights helped us understand how different audiences perceive and interact with the content, highlighting the importance of clear explanations and intuitive navigation. 
+
+
+**Lighthouse**
+
 ![Lighthouse](assets/images/lighthouse.png)
 
-- [HTML5](assets/images/validationhtml.png)
+**W3C validation Html**
+![HTML5](assets/images/validationhtml.png)
 
-- [CSS3](https://en.wikipedia.org/wiki/CSS)
+**W3C validation CSS**
 
-- [JavaScript](https://www.javascript.com/)
+![CSS3](assets/images/validationcss.png)
+
+**Jshint**
+
+See comment on Unfixed bugs
+
+
+![jshint](assets/images/javabug.png)
+
 
 
 ## Bugs
@@ -159,35 +230,46 @@ Recognizing the importance of addressing this issue, I reached out to my mentor 
 
 ## Unfixed bugs 
 
-I could't make all the content on page centred to make It look good on desktop. I tried flex-box, max-width and It did'd work. When no time left and also that the target group I'm 
-aiming for this quiz, mobile first is most essential. 
+### Problem Description:
+Upon testing the JavaScript implementation, an unused variable named `selectOption` was identified on line 83. This discovery raised concerns regarding potential impacts on the quiz's functionality and the possibility of introducing new bugs if modifications were made.
+
+### Resolution Strategy:
+Given the constraints of time and the critical path to submission, a careful evaluation was conducted to assess the necessity of removing the unused variable. It was determined that the bug did not significantly affect the core functionality of the quiz, allowing for a temporary suspension of removal until a more opportune moment.
+
+### Decision Rationale:
+The decision to leave the unused variable intact was primarily driven by the urgency of meeting the project's deadlines and the prioritization of addressing more critical bugs. Additionally, it was deemed prudent to preserve the existing code structure to minimize the risk of unforeseen complications arising from alterations.
+
+### Next Steps:
+Moving forward, we will monitor the quiz's performance closely for any adverse effects stemming from the presence of the unused variable. Should the situation warrant it, a reassessment of this decision will be undertaken, with a focus on minimizing disruptions to the project timeline and ensuring optimal user experience.
 
 
 ## Project Improvements
 
--Overview
+A button that you can click to return to first page, no you need to reloud the page. 
 
--This project aims to enhance the user experience and visual appeal through various improvements. These changes include optimizing content for desktop viewing, personalizing messages based on user scores, achieving symmetry in design, and imbuing a finance-oriented aesthetic.
-
-- Proposed Improvements
-
-- Desktop Optimization
-Centred Content: Ensure all content is centrally aligned to enhance readability and aesthetics on desktop screens.
-Responsive Design: Implement responsive design principles to adapt the layout seamlessly across different screen sizes.
-
-- Personalized Messages
+Personalized Messages
 User Score-based Messages: Tailor messages based on the user's performance or interaction with the application. Provide encouraging feedback or helpful tips depending on their scores.
- 
+
+
 
 ## Learnings
 Developing the Bull & Bear Quiz taught me valuable lessons about project management and coding practices. Initially, I rushed into coding without adequate planning, leading to unnecessary revisions and delays. This experience emphasized the importance of thorough project planning to avoid scope creep.
 
 I also recognized the significance of commenting and documenting my code early in the development process. This oversight made debugging and maintenance more difficult than expected. Going forward, I'll integrate commenting as a standard part of my coding routine to improve code readability and maintainability.
 
-JavaScript posed particular challenges in understanding logic, despite using a mix of LMS resources and YouTube tutorials in my native language. This highlighted the need for a deeper understanding of JavaScript fundamentals and that I need more time for practice. 
+JavaScript posed particular challenges in understanding logic, despite using a mix of LMS resources and YouTube tutorials in my native language. This highlighted the need for a deeper understanding of JavaScript fundamentals and that I need more time for practice and more time for reflection. 
+
+My biggest challenge is the documentation, and my previous roles in project management were accustomed to templates, meaning there was usually one way or another predefined method of working. In coding, I've heard from several different coders that the fun part is that there isn't only one way or one right way of doing things, and that's the charm. I'm not entirely sure I agree with that, yet. :) 
 
 Overall, this project has been a catalyst for improving my project management skills, coding practices, and JavaScript proficiency, equipping me better for future projects.
 
 
-## Contributing
+## Acknowledgments
+- Big thanks to Jonathan Zakrisson that help me alot the day before submitting this project! 
+- To everyone on slack that always answer to questions on all levels. 
+- Extra thanks to Harry and Darragh Drennan for giving me detailed feedback on my code. 
+- My mentor Rory Patrick, educational and help me to stay calm. 
+
+## Contact
+For contributions or feedback, email us at anrosencrantz79@gmail.com
 
