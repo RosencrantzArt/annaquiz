@@ -66,7 +66,7 @@ function startQuiz() {
     startButton.disabled = true;
     nextQuestionButton.disabled = false;
     showQuestion();
-    startTime = Date.now() + (45 * 1000); // Start timer 45 seconds from now
+    startTime = Date.now() + (45 * 1000); // Start timer 90 seconds from now
     timerInterval = setInterval(updateTimer, 1000); // Timer update per second
 }
 
@@ -104,9 +104,9 @@ function nextQuestion() {
     currentQuestionIndex++;
     if (currentQuestionIndex >= questions.length) {
         // End of quiz
-        const answerBtns = document.getElementsByClassName('option-button')
+        const answerBtns = document.getElementsByClassName('option-button');
         for (let btn of answerBtns) {
-            btn.disabled = true 
+            btn.disabled = true;
         }
         nextQuestionButton.disabled = true;
         clearInterval(timerInterval);
